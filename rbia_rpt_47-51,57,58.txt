@@ -1,0 +1,25 @@
+------------filter for reports 47_51 and 57_58---------------------------
+rbia_rpt_47 
+lim<1000000
+
+rbia_rpt_48
+lim<1000000 and asst_code in ('002  004','002  005','002  006','002  007','002  008')
+and schm_code not in  ('CNOSD','CNSDL','CCSDL','CCSDS','LAGLD','LADEP','LANED','LANOD','ELADP','AJLIS','CADLN','CATLN','ACADL')
+and staff_schm_flg='N'
+ 
+rbia_rpt_49
+lim >=1000000 and lim<10000000
+ 
+rbia_rpt_50
+lim between>=1000000 and schm_code not in  ('CNOSD','CNSDL','CCSDL','CCSDS','LAGLD','LADEP','LANED','LANOD','ELADP','EGVSL','GOVSL','ECGSL','CCGSL')
+and staff_schm_flg='N'
+
+rbia_rpt_51
+lim>=10000000
+
+rbia_rpt_57
+schm_code not in  ('CNOSD','CNSDL','CCSDL','CCSDS','LAGLD','LADEP','LANED','LANOD','ELADP')
+and emp_no is not null
+ 
+rbia_rpt_58
+schm_code in ('AJLIS','CADLN','CATLN','ACADL')

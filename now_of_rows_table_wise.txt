@@ -1,0 +1,5 @@
+select a.name,b.rowcnt from sysobjects a,sysindexes b
+where a.id=b.id
+and a.xtype='u'
+and indid in (0,1)
+and a.name like '%rbia%'
